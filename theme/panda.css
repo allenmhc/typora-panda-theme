@@ -101,7 +101,7 @@
   --node-border: var(--menu-divider-color);
   --node-fill: var(--bg-color5);
   --mermaid-theme:dark;
-  
+
   --window-border: none;
 }
 
@@ -134,14 +134,41 @@
   src: local("Open Sans Bold Italic"), url("./panda/700i.woff") format("woff");
 }
 
+@font-face {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Nunito Sans"), url("./panda/NunitoSans.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  font-style: italic;
+  font-weight: normal;
+  src: local("Nunito Sans Italic"), url("./panda/NunitoSans-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: bold;
+  src: local("Nunito Sans Bold"), url("./panda/NunitoSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  font-style: italic;
+  font-weight: bold;
+  src: local("Nunito Sans Bold Italic"), url("./panda/NunitoSans-BoldItalic.ttf") format("truetype");
+}
+
 /* basic style */
 html {
   font-size: 16px;
 }
 
 body {
-  font-family: "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial,
-    sans-serif;
+  font-family: "Nunito Sans", "Opens Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: var(--text-color1);
   background: var(--bg-color1);
   line-height: 1.6;
@@ -192,7 +219,7 @@ h3 {
         line-height: 1.2em;
 }
 
-h4 { 
+h4 {
 	padding-top: 0.25em;
 	padding-bottom: 0.25em;
 	font-size:1.1em;
@@ -1286,7 +1313,7 @@ pre.md-meta-block:active {
   border-radius: 6px;
   padding: 10px;
   padding-left: 20px;
-  padding-right: 20px; 
+  padding-right: 20px;
 }
 
 /* switch between different mode */
@@ -1982,7 +2009,7 @@ g > text.slice {
 
 #write pre.md-meta-block {
     padding: 1rem;
-    line-height: 1.45;  
+    line-height: 1.45;
     background-color: var(--bg-color5);
     border: 0;
     border-radius: 0.3rem;
